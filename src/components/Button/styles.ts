@@ -24,7 +24,7 @@ export const DisabledContainer = styled.View`
 `
 
 export const Label = styled.Text`
-  font-family: ${({ theme }) => theme.fonts.DisplaySemibold};
+  font-family: ${({ theme }) => theme.fonts.Semibold};
   font-size: 16px;
   color: ${({ theme }) => theme.palette.white};
 

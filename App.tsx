@@ -12,10 +12,8 @@ import { Router } from "./src/routes/Router"
 export default function App() {
   let [fontsLoaded] = useFonts({
     "SFProDisplay-Semibold": require("./assets/fonts/SF-Pro-Display-Semibold.otf"),
-    "SFProText-Regular": require("./assets/fonts/SF-Pro-Text-Regular.otf"),
-    "SFProText-Semibold": require("./assets/fonts/SF-Pro-Text-Semibold.otf"),
-    "SFProText-Bold": require("./assets/fonts/SF-Pro-Text-Bold.otf"),
-    "SFProText-BoldItalic": require("./assets/fonts/SF-Pro-Text-BoldItalic.otf")
+    "SFProDisplay-Regular": require("./assets/fonts/SF-Pro-Display-Regular.otf"),
+    "SFProDisplay-Bold": require("./assets/fonts/SF-Pro-Display-Bold.otf")
   })
 
   if (!fontsLoaded) {
