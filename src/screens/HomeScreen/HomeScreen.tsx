@@ -1,11 +1,11 @@
 import React from "react"
-import { Text } from "react-native"
+import { Typography } from "../../components/Typography/Typography"
 import { Page } from "./styles"
 
 export const HomeScreen = () => {
   return (
     <Page>
-      <Text>Home Screen</Text>
+      <Typography variant="title1">Home Screen</Typography>
     </Page>
   )
 }

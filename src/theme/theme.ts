@@ -17,11 +17,9 @@ const theme = {
     l: "24px"
   },
   fonts: {
-    DisplaySemibold: "SFProDisplay-Semibold",
-    TextRegular: "SFProText-Regular",
-    TextSemibold: "SFProText-Semibold",
-    TextBold: "SFProText-Bold",
-    TextBoldItalic: "SFProText-BoldItalic"
+    Semibold: "SFProDisplay-Semibold",
+    Regular: "SFProDisplay-Regular",
+    Bold: "SFProDisplay-Bold"
   }
 }
 
