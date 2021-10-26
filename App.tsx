@@ -1,6 +1,6 @@
 import React from "react"
 import { StatusBar } from "expo-status-bar"
-import { StyleSheet, Text, View } from "react-native"
+import { StyleSheet } from "react-native"
 
 import AppLoading from "expo-app-loading"
 import { useFonts } from "expo-font"
@@ -24,6 +24,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <StatusBar />
       <Router />
     </ThemeProvider>
   )
