@@ -1,10 +1,24 @@
 import React, { ReactNode } from "react"
-import { Body, Body2, Title1, Title2, Title3 } from "./styles"
+import {
+  Body,
+  Body2,
+  BodyBanner,
+  Title1,
+  Title2,
+  Title3,
+  TitleBanner
+} from "./styles"
 
 interface TypographyProps {
   children: ReactNode | string
-  variant: "title1" | "title2" | "title3" | "body1" | "body2"
-  color?: string
+  variant:
+    | "title1"
+    | "title2"
+    | "title3"
+    | "body1"
+    | "body2"
+    | "banner-title"
+    | "banner-body"
 }
 
 export const Typography: React.FC<TypographyProps> = ({
@@ -25,6 +39,14 @@ export const Typography: React.FC<TypographyProps> = ({
 
   if (variant === "body2") {
     return <Body2>{children}</Body2>
+  }
+
+  if (variant === "banner-title") {
+    return <TitleBanner>{children}</TitleBanner>
+  }
+
+  if (variant === "banner-body") {
+    return <BodyBanner>{children}</BodyBanner>
   }
 
   return <Body>{children}</Body>

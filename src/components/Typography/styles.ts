@@ -42,3 +42,18 @@ export const Body = styled.Text`
   letter-spacing: -0.35px;
   color: ${({ theme }) => theme.palette.gray};
 `
+
+export const TitleBanner = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.Bold};
+  font-size: 20px;
+  line-height: 24px;
+  color: ${({ theme }) => theme.palette.white};
+`
+
+export const BodyBanner = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.Regular};
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  color: ${({ theme }) => theme.palette.white};
+`
